@@ -1,0 +1,46 @@
+.cards-container{
+    width: 280px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: $tertiary-background-color;
+    perspective: 1000px;
+
+    .cards-banner{
+        height: 200px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            object-position: top;
+        }
+    }
+
+    @include respond-to(lg) {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .cards-content{
+        padding: 0.5rem;
+        background-color: #bfbfbf5e;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        .card-title{
+            color: $primary-text-color;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .card-subtitle{
+            font-size: 0.75rem;
+        }
+    }
+}
+

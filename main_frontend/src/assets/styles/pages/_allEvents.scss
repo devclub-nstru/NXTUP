@@ -1,0 +1,116 @@
+.dashboard {
+  display: flex;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  height: 80vh;
+  max-height: 60vh;
+
+  @include respond-to("lg") {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 20%;
+    padding: 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 5%;
+
+    @include respond-to("lg") {
+      width: 100%;
+      height: auto;
+      border-right: none;
+      padding: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @include respond-to("xs") {
+      position: relative;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      @include respond-to("lg") {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      li {
+        padding: 0.8rem 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+
+        &.active {
+          color: #5d35e3;
+          font-weight: bold;
+        }
+
+        &.green {
+          color: #36e8b0;
+        }
+
+        &.orange {
+          color: #d97035;
+        }
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+
+        @include respond-to("xs") {
+          font-size: 0.7rem;
+        }
+
+        .dashboard-item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .subsection {
+          @include respond-to("lg") {
+            flex-direction: column;
+          }
+
+          li {
+            margin-bottom: 0;
+            margin: 0 0 0 2rem;
+
+            @include respond-to("lg") {
+              margin: 0;
+              padding: 0.25rem;
+            }
+
+            @include respond-to("xs") {
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dashboard-content {
+    width: 80%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #000;
+    overflow-y: auto;
+
+    @include respond-to("lg") {
+      height: 100vh;
+      width: 100%;
+    }
+  }
+}

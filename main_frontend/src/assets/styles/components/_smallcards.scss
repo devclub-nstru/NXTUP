@@ -1,0 +1,46 @@
+.small-cards-continer {
+  width: 280px;
+  height: 120px;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex: 0 1 calc(40% - 16px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2rem);
+  transition: transform 0.3s ease;
+
+  @include respond-to(md) {
+    flex: 0 1 calc(50% - 16px);
+  }
+
+  @include respond-to(xs) {
+    flex: 0 1 calc(100% - 16px);
+  }
+
+  .small-card-title {
+    font-weight: 500;
+  }
+}
+
+.small-cards-continer:hover {
+  transform: scale(1.05);
+  transform-origin: bottom right;
+}
+
+.small-cards-continer.events {
+  background: -webkit-radial-gradient(at bottom left, #693bff);
+  background: radial-gradient(at bottom right, #693bff, #09090b, transparent);
+}
+.small-cards-continer.clubs {
+  background: -webkit-radial-gradient(at bottom left, #ff833b);
+  background: radial-gradient(at bottom right, #ff833b, #09090b, transparent);
+}
+.small-cards-continer.clans {
+  background: -webkit-radial-gradient(at bottom left, #3bffc1);
+  background: radial-gradient(at bottom right, #3bffc1, #09090b, transparent);
+}
+.small-cards-continer.more {
+  background: -webkit-radial-gradient(at bottom left, #ff3b3e);
+  background: radial-gradient(at bottom right, #ff3b3e, #09090b, transparent);
+}
+
+

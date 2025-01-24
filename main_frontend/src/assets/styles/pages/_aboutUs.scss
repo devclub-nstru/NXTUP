@@ -1,0 +1,12 @@
+.about-us-container{
+    text-align: center;
+
+    .about-us-container-events{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}

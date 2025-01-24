@@ -1,0 +1,18 @@
+.all-event-section {
+  .event-heading {
+    font-size: 2rem;
+    color: $primary-text-color;
+  }
+
+  .all-event-container {
+    margin: 1rem 0 0 0;
+    width: 100%;
+
+    .no_event_available {
+      color: $text-gradient;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 5rem;
+    }
+  }
+}

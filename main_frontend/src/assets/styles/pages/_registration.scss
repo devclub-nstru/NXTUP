@@ -1,0 +1,90 @@
+.registration-form-container {
+    margin: 10% auto;
+    width: 60%;
+    padding: 1rem;
+    background-color: $quaternary-background-color;
+    border-radius: 1rem;
+  
+    @include respond-to("md") {
+      width: 80%;
+    }
+  
+    @include respond-to("sm") {
+      width: 90%;
+    }
+  
+    .intro-container {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 2rem;
+      .registration-form-heading {
+        font-size: 2.5rem;
+        background: linear-gradient(to top, #ffffff, $text-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.5rem;
+      }
+  
+      .registration-form-description {
+        color: $text-gradient;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    form{
+      .form-group{
+          margin-bottom: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+  
+          label{
+              font-size: 0.8rem;
+          }
+  
+          input, option, select, textarea{
+              background-color: #2f2f2f;
+              border: none;
+              border-radius: 0.5rem;
+              padding: 1rem 1rem;
+              color: $text-gradient;
+              font-size: 0.8rem;
+              outline: none;
+          }
+
+          .checkbox-option, .radio-option{
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            justify-content: flex-start;
+            font-size: 0.8rem;
+            input[type="checkbox"], input[type="radio"]{
+              background-color: #2f2f2f;
+              border: none;
+            }
+          }
+  
+      }
+  
+     .button-container{
+      display: flex;
+      justify-content: flex-end;
+  
+      .submit-button{
+          padding: 0.5rem 1.5rem;
+          border-radius: 0.5rem;
+          border: none;
+          background-color: #693BFF;
+          color: $primary-text-color;
+          font-size: 0.8rem;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          @include respond-to("xs") {
+            width: 100%;
+          }
+      }
+     }
+    }
+  }

@@ -1,0 +1,21 @@
+$breakpoints: (
+  xs: 475px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px,
+);
+
+$primary-text-color: #fff;
+$text-gradient: #9b9b9b; 
+$primary-background-color: #000;
+$secondary-background-color: #fff;
+$tertiary-background-color: #bfbfbf5e;
+$quaternary-background-color: #161616;
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "WS-Bind", sans-serif;
+
+$container-padding: 1rem;
+$container-margin: 1rem;

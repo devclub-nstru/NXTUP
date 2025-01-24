@@ -1,0 +1,132 @@
+.homepage-event-container{
+    width: 230px;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    @include respond-to(xl) {
+        height: 350px;
+    }
+
+    @include respond-to(lg) {
+        width: 300px;
+    }
+
+    @include respond-to(md) {
+        width: 280px;
+    }
+
+    .homepage-event-tag-container{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
+        background-color: #1E1C1C;
+
+        .homepage-event-tag-circle{
+            background-color: rgb(3, 203, 3);
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+        }
+        .homepage-event-tag-title{
+            font-size: 0.75rem;
+        }
+    }
+
+    .homepage-event-details-container{
+        .homepage-event-name{
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .homepage-event-date{
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.homepage-event-container.green{
+    background-image: url("../../../../public/images/celebrating.jpg");
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center center;
+
+    height: 350px;
+    @include respond-to(xl) {
+        height: 350px;
+    }
+
+    @include respond-to(lg) {
+        height: 450px;
+    }
+}
+
+.homepage-event-container.orange{
+    background-image: url("../../../../public/images/republic.jpg");
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center center;
+    height: 380px;;
+    @include respond-to(xl) {
+        height: 350px;
+    }
+
+    @include respond-to(lg) {
+        height: 450px;
+    }
+}
+
+.homepage-event-container.red{
+    background-image: url("../../../../public/images/neutron.jpg");
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center center;
+    height: 410px;
+    @include respond-to(xl) {
+        height: 350px;
+    }
+
+    @include respond-to(lg) {
+        height: 450px;
+    }
+}
+
+.homepage-event-container.yellow{
+    background-image: url("../../../../public/images/sports.jpg");
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center center;
+    height: 380px;
+    @include respond-to(xl) {
+        height: 350px;
+    }
+
+    @include respond-to(lg) {
+        height: 450px;
+    }
+}
+
+.homepage-event-container.pink{
+    background-image: url("../../../../public/images/holi.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    @include respond-to(xl) {
+        height: 350px;
+    }
+
+    @include respond-to(lg) {
+        height: 450px;
+    }
+}

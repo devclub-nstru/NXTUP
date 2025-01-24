@@ -1,0 +1,27 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/fonts";
+
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+
+@import "layout/container";
+
+@import "components/navbar";
+@import "components/smallcards";
+@import "components/events";
+@import "components/cards";
+@import "components/footer";
+@import "components/loader";
+@import "components/detailContainer";
+@import "components/clan";
+@import "components/club";
+@import "components/event";
+
+@import "pages/home";
+@import "pages/eventDetails";
+@import "pages/registration";
+@import "pages/notFound";
+@import "pages/allEvents";
+@import "pages/aboutUs";
